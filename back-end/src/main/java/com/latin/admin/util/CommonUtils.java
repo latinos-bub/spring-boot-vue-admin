@@ -3,7 +3,6 @@ package com.latin.admin.util;
 import com.alibaba.fastjson.JSONObject;
 import com.latin.admin.enums.ErrorEnum;
 import com.latin.admin.exception.CommonJsonException;
-import com.sun.org.apache.regexp.internal.RE;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Enumeration;
