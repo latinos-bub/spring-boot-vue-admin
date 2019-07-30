@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.latin.admin.dao.PermissionDao;
 import com.latin.admin.service.PermissionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
@@ -14,6 +15,7 @@ import java.util.Set;
  * @version: 1.0
  * @className: PermissionServiceImpl
  */
+@Service
 public class PermissionServiceImpl implements PermissionService {
 
 

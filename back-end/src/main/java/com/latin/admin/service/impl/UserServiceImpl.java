@@ -6,6 +6,7 @@ import com.latin.admin.enums.ErrorEnum;
 import com.latin.admin.service.UserService;
 import com.latin.admin.util.CommonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
@@ -20,6 +21,7 @@ import java.util.Set;
  * @version: 1.0
  * @className: UserServiceImpl
  */
+@Service
 public class UserServiceImpl implements UserService {
 
 

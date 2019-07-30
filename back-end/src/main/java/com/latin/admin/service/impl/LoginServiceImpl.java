@@ -7,7 +7,6 @@ import com.latin.admin.service.LoginService;
 import com.latin.admin.service.PermissionService;
 import com.latin.admin.util.CommonUtils;
 import com.latin.admin.util.ConstantUtils;
-import org.apache.catalina.security.SecurityUtil;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -16,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.apache.shiro.subject.Subject;
 
 import org.apache.shiro.session.Session;
+import org.springframework.stereotype.Service;
 
 /**
  * @author: util.you.com@gmail.com
@@ -24,6 +24,7 @@ import org.apache.shiro.session.Session;
  * @version: 1.0
  * @className: LoginServiceImpl
  */
+@Service
 public class LoginServiceImpl implements LoginService {
 
 
