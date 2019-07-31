@@ -1,6 +1,7 @@
 package com.latin.admin.dao;
 
 import com.alibaba.fastjson.JSONObject;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.Set;
 
@@ -11,6 +12,7 @@ import java.util.Set;
  * @version: 1.0
  * @className: PermissionDao
  */
+@Mapper
 public interface PermissionDao {
 
 

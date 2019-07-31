@@ -1,6 +1,7 @@
 package com.latin.admin.dao;
 
 import com.alibaba.fastjson.JSONObject;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.List;
  * @version: 1.0
  * @className: UserDao
  */
+@Mapper
 public interface UserDao {
 
 

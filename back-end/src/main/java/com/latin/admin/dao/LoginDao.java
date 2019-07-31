@@ -1,6 +1,7 @@
 package com.latin.admin.dao;
 
 import com.alibaba.fastjson.JSONObject;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 /**
@@ -10,6 +11,7 @@ import org.apache.ibatis.annotations.Param;
  * @version: 1.0
  * @className: LoginDao
  */
+@Mapper
 public interface LoginDao {
 
 

@@ -3,6 +3,7 @@ package com.latin.admin.exception;
 import com.alibaba.fastjson.JSONObject;
 import com.latin.admin.enums.ErrorEnum;
 import com.latin.admin.util.CommonUtils;
+import org.apache.shiro.authz.UnauthenticatedException;
 import org.apache.shiro.authz.UnauthorizedException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -132,7 +133,7 @@ public class GlobalExceptionHandler {
      * @description: 未登录报错拦截
      * 请求需要权限的接口，如果未登录就调用该接口，就会报该错误
      */
-    @ExceptionHandler(UnauthorizedException.class)
+    @ExceptionHandler(UnauthenticatedException.class)
     public JSONObject unauthenticatedException(){
 
         return CommonUtils.errorJson(ErrorEnum.E_20011);
